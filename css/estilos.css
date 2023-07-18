@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400;1,700&family=Poppins:wght@300;400;600;700&display=swap');
+
+
+:root{
+    --padding-container: 100px 0;
+    --color-title:#edcb54;
+    --color-blanco:#fff;
+    --color-boton:#f3ce4c;
+    --color-negro:#000000;
+    --color-hover: #bc9711;
+    --color-icon:#f5cb33;
+    /* tamaños de fuentes*/
+    --subtitle--font-size:2rem;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    color: var(--color-blanco);
+}
+
+ .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(180deg, #000000b7 0%,#000000b1 100%),url('../img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+ }
+
+ .nav-logo{
+    margin-top: 0px;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #edcb54;
+ }
+
+ /* Navegación*/
+
+ .nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ }
+
+ .nav-title{
+    font-weight: 300;
+ }
+
+ .nav-link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1.5em;
+ }
+
+ .nav-items{
+    list-style: none;
+ }
+
+ .nav-links{
+    color: var(--color-blanco);
+    text-decoration: none;
+ }
+
+ .nav-menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+ }
+
+ .nav-img{
+    display: block;
+    width: 30px;
+ }
+
+ .nav-close{
+    display: var(--show,none);
+ }
+
+ .hero-container{
+    max-width: 800px;
+    display: grid;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-top: 100px;
+ }
+
+ .hero-title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-title);
+ }
+
+ .hero-paragraph{
+    font-size: 1.3rem;
+ }
+
+ .contact{
+    display: inline-block;
+    background-color: var(--color-boton);
+    justify-self: center;
+    color: var(--color-negro);
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+ }
+
+ .contact:hover{
+   background-color:var(--color-hover) ;
+ }
+
+ /*About*/
+
+ .about{
+   text-align: center;
+ }
+
+ .subtitle{
+   color: var(--color-negro);
+   font-size: var(--subtitle--font-size);
+   margin-bottom: 25px;
+
+ }
+
+ .about-paragraph{
+   line-height: 1.7;
+ }
+
+.about--black{
+   font-weight: bold;
+}
+
+ .about-main{
+   padding-top: 70px;
+   display: grid;
+   width: 90%;
+   margin: 0 auto;
+   gap: 4em;
+   overflow: hidden;
+   grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+ }
+ .about-icons{
+   display: grid;
+   gap: 1em;
+   justify-items: center;
+   width: 220px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+ .about-icon{
+   width: 4rem;
+   background-color:var(--color-icon);
+   border-radius: 20%;
+ }
+/*Conocimientos knowledge*/
+
+.knowledge{
+   background-color: #e5e5f7;
+   background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+   background-size: 20px 20px;
+   background-position: 0 0,10px 10px;
+   overflow: hidden;
+}
+
+.knowledge-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1em;
+   align-items: center;
+}
+
+.knowledge-picture{
+   max-width: 700px;
+}
+
+.knowledge-paragraph{
+   line-height: 1.7;
+   margin-bottom: 15px;
+}
+
+.knowledge-subtile{
+   font-size: var(--subtitle--font-size);
+}
+
+.knowledge-img{
+   width: 100%;
+   display: block;
+}
+
+/*Service and product*/
+.service-title {
+   margin-top: 2rem;
+   font-size: var(--subtitle--font-size);
+   text-align: center;
+}
+
+.service {
+   background: #f2f2f2;
+}
+
+.service-article {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 60px;
+   justify-content: space-around;
+}
+
+.article {
+   width: 29%;
+   background: #FFF;
+   margin-bottom: 30px;
+   border-radius: 10px;
+   padding: 45px 30px 60px 30px;
+   transition: 0.5s;
+   text-align: center;
+}
+
+.article:hover {
+   box-shadow: 0 4px 10px rgba(48, 47, 17, 0.26);
+}
+
+.article>i {
+   font-size: 30px;
+   color: #FFF;
+   background: var(--color-icon);
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   text-align: center;
+   padding-top: 20px;
+   border-radius: 50%;
+   box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+.article>h3 {
+   font-size: 24px;
+   margin-top: 30px;
+}
+
+.article>p {
+   font-weight: 100;
+   margin-top: 15px;
+   padding-bottom: 20px;
+}
+
+.article>a {
+   color: #5D6678;
+   font-weight: 400;
+   text-decoration: none;
+}
+
+.article>i:hover {
+   color: #1FDE82;
+   transition: color .5s;
+}
+
+
+/*Price*/
+
+@media (max-width:736px) {
+   .nav-menu{
+      display: block;
+   }
+
+   .nav-link--menu{
+      position: fixed;
+      background-color: #000000;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: .7s opacity;
+   }
+
+   .nav-link--show{
+      --show:block;
+      opacity: 1;
+      pointer-events: unset;
+   }
+
+   .nav-close{
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 30px;
+      cursor: pointer;
+      
+   }
+   .knowledge-container{
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content 1fr;
+      gap: 3em;
+      text-align: center;
+  }
+
+  .knowledge-picture{
+      grid-row: 1/1;
+      justify-self: center;
+  }
+
+   .article {
+      width: 45%;
+  }
+}
+
+@media (max-width:600px) {
+   .article {
+      width: 95%;
+  }
+
+}
