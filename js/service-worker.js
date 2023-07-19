@@ -1,7 +1,8 @@
 // Definir una lista de recursos para cachear
 const resourcesToCache = [
     '../img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg',
-    '../img/luke-peters-B6JINerWMz0-unsplash.jpg'
+    '../img/luke-peters-B6JINerWMz0-unsplash.jpg',
+    '../img/DemurStart Technology logo.jpg'
     // Agrega aquí otros recursos que desees cachear
   ];
   
