@@ -286,9 +286,41 @@ body{
    transition: color .5s;
 }
 
+/*product technology and slide img*/
+.product-carrusel {
+   display: flex;
+   
+ }
+.product-title{
+   text-align: center;
+   font-size: var(--subtitle--font-size);
+}
+
+
+ 
+ .element {
+   scroll-snap-align: start;
+   overflow: hidden; /* Alinea cada imagen al inicio de la vista del carrusel */
+ }
+
+ .img-element{
+ 
+ height: 400px;
+ }
 
 /*Price*/
 
+@media (max-width:1030px){
+
+   .product-carrusel{
+      display: block;
+      text-align: center;
+      
+   }
+
+
+   
+}
 @media (max-width:736px) {
    .nav-menu{
       display: block;
