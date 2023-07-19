@@ -2,7 +2,9 @@
 const resourcesToCache = [
     '../img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg',
     '../img/luke-peters-B6JINerWMz0-unsplash.jpg',
-    '../img/DemurStart Technology logo.jpg'
+    '../img/DemurStart Technology logo.jpg',
+    '../css/estilos.css',
+    '../css/normalize.css',
     // Agrega aquí otros recursos que desees cachear
   ];
   
