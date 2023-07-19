@@ -261,7 +261,7 @@ body{
    text-align: center;
    padding-top: 20px;
    border-radius: 50%;
-   box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+   box-shadow: 0 8px 32px rgba(16, 16, 16, 0.46);
 }
 
 .article>h3 {
