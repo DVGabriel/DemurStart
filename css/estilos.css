@@ -7,14 +7,17 @@
     --color-blanco:#fff;
     --color-boton:#f3ce4c;
     --color-negro:#000000;
-    --color-hover: #bc9711;
+    --color-hover: #e7a415;
     --color-icon:#f5cb33;
     /* tamaños de fuentes*/
     --subtitle--font-size:2rem;
+    /*Font weing*/
+    --fontweing--font-weight:bold;
 }
 
 body{
     font-family: 'Merriweather', serif;
+    
 }
 
 .container{
@@ -134,6 +137,7 @@ body{
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+    font-weight: var(--fontweing--font-weight);
  }
 
  .contact:hover{
@@ -299,25 +303,33 @@ body{
 
  
  .element {
-   scroll-snap-align: start;
    overflow: hidden; /* Alinea cada imagen al inicio de la vista del carrusel */
  }
 
  .img-element{
  
- height: 400px;
+ height: 350px;
  }
 
+ .btn-product{
+   display: flex;
+   justify-content: center;
+   border-radius:0px;
+   text-align: center;
+ }
 /*Price*/
 
-@media (max-width:1030px){
+@media (max-width:1200px){
 
    .product-carrusel{
       display: block;
       text-align: center;
-      
    }
-   
+   .img-element{
+      width: 700px;
+      height: 500px;
+   }
+
 }
 @media (max-width:736px) {
    .nav-menu{
@@ -339,6 +351,7 @@ body{
       opacity: 0;
       pointer-events: none;
       transition: .7s opacity;
+      
    }
 
    .nav-link--show{
