@@ -1,7 +1,7 @@
 // Definir una lista de recursos para cachear
 const resourcesToCache = [
-    './img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg',
-    './img/luke-peters-B6JINerWMz0-unsplash.jpg'
+    '../img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg',
+    '../img/luke-peters-B6JINerWMz0-unsplash.jpg'
     // Agrega aquí otros recursos que desees cachear
   ];
   
