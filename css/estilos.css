@@ -290,47 +290,22 @@ body{
    transition: color .5s;
 }
 
-/*product technology and slide img*/
-.product-carrusel {
-   display: flex;
-   
- }
+/*product technology  css gris and slide */
 .product-title{
    text-align: center;
    font-size: var(--subtitle--font-size);
 }
-
-
- 
- .element {
-   overflow: hidden; /* Alinea cada imagen al inicio de la vista del carrusel */
- }
-
- .img-element{
- 
- height: 350px;
- }
-
- .btn-product{
-   display: flex;
-   justify-content: center;
-   border-radius:0px;
+.container-title{
    text-align: center;
- }
+}
+
+.btn-product{
+   text-align: center;
+   border-radius:0px ;
+   width: 100%;
+}
 /*Price*/
 
-@media (max-width:1200px){
-
-   .product-carrusel{
-      display: block;
-      text-align: center;
-   }
-   .img-element{
-      width: 700px;
-      height: 500px;
-   }
-
-}
 @media (max-width:736px) {
    .nav-menu{
       display: block;
