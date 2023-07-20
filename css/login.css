@@ -1,14 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/img_login/b43f30d8-0dba-4105-86f1-e23b0e9075f7.jpg) no-repeat center;
+    background: url(../img/img_login/b43f30d8-0dba-4105-86f1-e23b0e9075f7.jpg);
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
   }
-
+  @media screen and (min-width: 1352px) {
+    body {
+      background-size: 100%; /* A partir de 1352px, el fondo se achicará al 80% */
+    }
+  }
   .login-box {
     width: 320px;
+    max-width: 80%; /* Cambiar a un valor mayor para evitar que se vea pequeño en dispositivos pequeños */
     height: 420px;
     background: #000;
     color: #fff;
@@ -86,16 +91,4 @@ body {
 
   .login-box a:hover {
     color: #fff;
-  }
-
-  /* Estilos para hacerlo responsive */
-  @media screen and (max-width: 400px) {
-    .login-box {
-      width: 90%;
-      padding: 50px 20px;
-    }
-
-    .login-box .avatar {
-      top: -40px;
-    }
   }
