@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../img/img_login/b43f30d8-0dba-4105-86f1-e23b0e9075f7.jpg);
+    background: url(../img/img_login/b43f30d8-0dba-4105-86f1-e23b0e9075f7.jpg) top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
